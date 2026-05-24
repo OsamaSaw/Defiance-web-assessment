@@ -18,6 +18,5 @@ const { connectDB } = require('./db/mockDatabase');
 connectDB();
 
 app.listen(process.env.PORT || 4000, () => {
-  console.log(`🚀 Server running on port ${process.env.PORT || 4000}`);
-  console.log(`📦 Using in-memory database - no MongoDB required`);
+  console.log(`Server running on port ${process.env.PORT || 4000}`);
 });

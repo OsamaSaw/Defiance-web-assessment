@@ -110,12 +110,6 @@ class MockTransaction {
 
 // Mock connection function
 const connectDB = async () => {
-  console.log('=================================');
-  console.log('✅ Using IN-MEMORY DATABASE');
-  console.log('📦 No MongoDB installation required');
-  console.log('👤 Test account: test@meblabs.com');
-  console.log('🔑 Password: testtest (or any password)');
-  console.log('=================================');
   return true;
 };
 

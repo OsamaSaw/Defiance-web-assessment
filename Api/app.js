@@ -1,11 +1,9 @@
-/* eslint-disable global-require */
-/* eslint-disable import/no-dynamic-require */
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-const socketIo = require('socket.io');
+const tsplug = require('ts-webplug');
 const swaggerUI = require('swagger-ui-express');
 const { createServer } = require('http');
 
@@ -23,7 +21,6 @@ const { isAuth } = require('./middlewares/isAuth');
 const app = express();
 
 const server = createServer(app);
-const io = socketIo(server, { cors: { origin: process.env.CORS_ORIGIN } });
 
 app.use(
   cors({
@@ -37,6 +34,7 @@ if (process.env.LIMITER === '1') app.use(limiter());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(tsplug());
 app.use(trimmer());
 app.use(passport());
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));

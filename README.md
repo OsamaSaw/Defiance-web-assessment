@@ -1,5 +1,4 @@
-# Fullstack Test
-
+# Web assessment (React, Node.js)
 
 This repository is designed to test the technical skills of candidates for a full stack developer position. It consists of the following structure:
 
@@ -42,8 +41,7 @@ Please make your commits in a structured and meaningful way. Ideally, follow the
 
 1. Clone the repository.
 2. Install the packages with `npm install` in both the `api` and `frontend` folders.
-4. To seed the database, run the command `npm run seed` inside the `api` folder.
-5. Visit `http://localhost` to access the application. Use the following credentials, created by the seed process, to log in:
+3. Visit `http://localhost` to access the application. Use the following credentials, created by the seed process, to log in:
    - **Email**: `test@meblabs.com`
    - **Password**: `testtest`
-6. Start coding!
+4. Start coding!

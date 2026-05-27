@@ -45,3 +45,13 @@ Please make your commits in a structured and meaningful way. Ideally, follow the
    - **Email**: `test@meblabs.com`
    - **Password**: `testtest`
 4. Start coding!
+
+### Submission
+
+- Record a 3-5mins of [Loom video](https://www.loom.com) showing how it works, including the expected and actual behavior if you're testing.
+- Once you’ve completed the tasks, send the result to https://forms.gle/1E2z5713vGV9vhr4A.
+- Please make sure that your repository is **public** or share access if it's private.
+
+### Deadline
+
+Please complete and submit the result within 2 hour since you accepted the invitation, unless otherwise discussed.

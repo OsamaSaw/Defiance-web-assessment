@@ -38,10 +38,12 @@ app.use(tsplug());
 app.use(trimmer());
 app.use(passport());
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
-app.use((req, res, next) => {
-  req.io = io;
-  return next();
-});
+// app.use((req, res, next) => {
+//   req.io = io;
+//   return next();
+// });
+
+// this is breaking the app and there is no need for a socket
 
 app.get('/', (req, res, next) => next(SendData({ message: 'RestAPI is alive!' })));
 
